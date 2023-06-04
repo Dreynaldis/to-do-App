@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
+body {
+  margin: 0;
+  font-family: Neucha, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* * {
+  border: 1px solid red;
+} */
+* {
+  -webkit-user-drag: none;
+  letter-spacing: 1.5px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.bg-image {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  object-fit: fill;
+  opacity: 80%;
+  filter: brightness(70%) contrast(130%);
+}
+
+.done {
+  filter: brightness(0) saturate(100%) invert(54%) sepia(76%) saturate(3587%)
+    hue-rotate(86deg) brightness(115%) contrast(118%);
+}
+
+.edit {
+  filter: brightness(0) saturate(100%) invert(98%) sepia(41%) saturate(1406%)
+    hue-rotate(327deg) brightness(92%) contrast(90%);
+}
+
+.delete {
+  filter: brightness(0) saturate(100%) invert(21%) sepia(94%) saturate(3043%)
+    hue-rotate(338deg) brightness(85%) contrast(112%);
+}
+
+.save {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(98%) saturate(890%)
+    hue-rotate(184deg) brightness(93%) contrast(100%);
+}
+
+.add {
+  filter: brightness(0) saturate(100%) invert(60%) sepia(70%) saturate(295%)
+    hue-rotate(82deg) brightness(90%) contrast(92%);
+}
+table {
+  width: 100%;
+  overflow-y: scroll;
+}
+tbody {
+  overflow-y: scroll;
+  height: 100px;
+}
